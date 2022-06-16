@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const button = document.querySelector('.num-button');
+const clear = document.querySelector('.clear-button');
 
 const rows = [];
 const columns = [];
@@ -30,3 +31,8 @@ button.addEventListener('click', () => {
     })
 })
 
+clear.addEventListener('click', () => {
+    for (i = 0; i < input; i++) {
+        rows[i].remove();
+    }
+})

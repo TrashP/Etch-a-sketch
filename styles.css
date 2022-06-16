@@ -36,6 +36,11 @@ body {
 }
 
 .num-button {
-    width: 100px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
+}
+
+.clear-button {
+    width: 50px;
+    height: 50px;
 }
