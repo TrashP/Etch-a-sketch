@@ -7,6 +7,9 @@ const columns = [];
 input = 0;
 
 button.addEventListener('click', () => {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
     input = parseInt(prompt('Enter the number of cells per side: (max 100)', 16));
     if (input > 100) {
         input = 100;
@@ -28,11 +31,11 @@ button.addEventListener('click', () => {
         if (e.target.matches('.table-cell')) {
             e.target.classList.add('hover-mouse');
         }
-    })
+    })  
 })
 
 clear.addEventListener('click', () => {
-    for (i = 0; i < input; i++) {
-        rows[i].remove();
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
     }
 })
