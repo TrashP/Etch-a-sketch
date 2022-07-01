@@ -1,2 +1,2 @@
 # Etch-a-sketch
-Grid project for HTML, CSS, and Javascript.
+Flexbox project for HTML, CSS, and Javascript.
